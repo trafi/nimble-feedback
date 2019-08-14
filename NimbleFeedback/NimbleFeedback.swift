@@ -3,7 +3,7 @@ import Nimble
 
 
 /// A basic protocol that every state type must conform to in order to be testable.
-protocol State {
+public protocol State {
 
     associatedtype Event
 
@@ -17,7 +17,7 @@ protocol State {
 }
 
 
-extension State {
+public extension State {
 
     /// Convenience method to mutate a state.
     ///
@@ -28,7 +28,7 @@ extension State {
     }
 }
 
-extension Expectation where T: State {
+public extension Expectation where T: State {
 
     typealias Query<Q> = (T) -> Q?
 
@@ -61,7 +61,7 @@ extension Expectation where T: State {
 
 // MARK: - StateChangeExpectation
 
-struct StateChangeExpectation<S: State> {
+public struct StateChangeExpectation<S: State> {
 
     let expectation: Expectation<S>
     let events: [S.Event]
