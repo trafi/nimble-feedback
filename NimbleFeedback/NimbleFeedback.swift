@@ -28,32 +28,32 @@ public extension State {
     }
 }
 
-public extension Expectation where T: State {
+extension Expectation where T: State {
 
-    typealias Query<Q> = (T) -> Q?
+    public typealias Query<Q> = (T) -> Q?
 
-    func after(_ events: T.Event...) -> StateChangeExpectation<T> {
+    public func after(_ events: T.Event...) -> StateChangeExpectation<T> {
         return StateChangeExpectation(expectation: self, events: events, change: nil)
     }
 
-    func after(_ events: [T.Event]) -> StateChangeExpectation<T> {
+    public func after(_ events: [T.Event]) -> StateChangeExpectation<T> {
         return StateChangeExpectation(expectation: self, events: events, change: nil)
     }
 
-    func after(_ change: @escaping () -> (), _ events: T.Event...) -> StateChangeExpectation<T> {
+    public func after(_ change: @escaping () -> (), _ events: T.Event...) -> StateChangeExpectation<T> {
         return StateChangeExpectation(expectation: self, events: events, change: change)
     }
 
-    func to<Q>(_ query: @escaping Query<Q>) {
+    public func to<Q>(_ query: @escaping Query<Q>) {
         StateChangeExpectation(expectation: self, events: [], change: nil)
             .to(query)
     }
 
-    func toHave<Q>(_ query: @escaping Query<Q>) {
+    public func toHave<Q>(_ query: @escaping Query<Q>) {
         to(query)
     }
 
-    func toMatch(_ matcher: @escaping (T) -> Bool) {
+    public func toMatch(_ matcher: @escaping (T) -> Bool) {
         StateChangeExpectation(expectation: self, events: [], change: nil)
             .resolve(matcher)
     }
@@ -81,17 +81,17 @@ public struct StateChangeExpectation<S: State> {
 
 extension StateChangeExpectation {
 
-    typealias Query<Q> = (S) -> Q?
+    public typealias Query<Q> = (S) -> Q?
 
-    func to<Q>(_ query: @escaping Query<Q>) {
+    public func to<Q>(_ query: @escaping Query<Q>) {
         resolve(query, toBecomeNonNil: true)
     }
 
-    func toHave<Q>(_ query: @escaping Query<Q>) {
+    public func toHave<Q>(_ query: @escaping Query<Q>) {
         resolve(query, toBecomeNonNil: true)
     }
 
-    func notTo<Q>(_ query: @escaping Query<Q>) {
+    public func notTo<Q>(_ query: @escaping Query<Q>) {
         resolve(query, toBecomeNonNil: false)
     }
 
@@ -104,14 +104,14 @@ extension StateChangeExpectation {
 
 extension StateChangeExpectation {
 
-    typealias Match = (S) -> Bool
+    public typealias Match = (S) -> Bool
 
 
     /// An expectation that checks whether a value changes after received events.
     ///
     /// - Parameters:
     ///   - matcher: a predicate to match a value against.
-    func toTurn(_ matcher: @escaping Match) {
+    public func toTurn(_ matcher: @escaping Match) {
         resolve(matcher)
     }
 
@@ -119,7 +119,7 @@ extension StateChangeExpectation {
     ///
     /// - Parameters:
     ///   - matcher: a predicate to match a value against.
-    func toStay(_ matcher: @escaping Match) {
+    public func toStay(_ matcher: @escaping Match) {
         resolve(matcher, expectSameResult: true)
     }
 }
