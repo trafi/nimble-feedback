@@ -10,7 +10,39 @@
 		53121D4323042AE100148925 /* NimbleFeedback.h in Headers */ = {isa = PBXBuildFile; fileRef = 53121D4123042AE100148925 /* NimbleFeedback.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		53121D4A23042B2100148925 /* NimbleFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53121D4923042B2100148925 /* NimbleFeedback.swift */; };
 		53121E3123042C8800148925 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53121E1A23042C6400148925 /* Nimble.framework */; };
+		53121E39230431C500148925 /* NimbleFeedbackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53121E38230431C500148925 /* NimbleFeedbackTests.swift */; };
+		53121E3B230431C500148925 /* NimbleFeedback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53121D3E23042AE100148925 /* NimbleFeedback.framework */; };
+		53121E422304330C00148925 /* Nimble.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 53121E1A23042C6400148925 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		53121E432304330C00148925 /* NimbleFeedback.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 53121D3E23042AE100148925 /* NimbleFeedback.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		53121E452304332300148925 /* DummyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53121E442304332300148925 /* DummyState.swift */; };
+		538D47C82304494400F356B0 /* DummyStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538D47C72304494400F356B0 /* DummyStateTests.swift */; };
+		538D47C923044A2900F356B0 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53121E1A23042C6400148925 /* Nimble.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		53121E3C230431C500148925 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53121D3523042AE100148925 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53121D3D23042AE100148925;
+			remoteInfo = NimbleFeedback;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		53121E412304330100148925 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				53121E422304330C00148925 /* Nimble.framework in Copy Frameworks */,
+				53121E432304330C00148925 /* NimbleFeedback.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		53121D3E23042AE100148925 /* NimbleFeedback.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NimbleFeedback.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -18,6 +50,11 @@
 		53121D4223042AE100148925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53121D4923042B2100148925 /* NimbleFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NimbleFeedback.swift; sourceTree = "<group>"; };
 		53121E1A23042C6400148925 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Nimble.framework; sourceTree = "<group>"; };
+		53121E36230431C500148925 /* NimbleFeedbackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NimbleFeedbackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		53121E38230431C500148925 /* NimbleFeedbackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NimbleFeedbackTests.swift; sourceTree = "<group>"; };
+		53121E3A230431C500148925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53121E442304332300148925 /* DummyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyState.swift; sourceTree = "<group>"; };
+		538D47C72304494400F356B0 /* DummyStateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyStateTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +66,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		53121E33230431C500148925 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53121E3B230431C500148925 /* NimbleFeedback.framework in Frameworks */,
+				538D47C923044A2900F356B0 /* Nimble.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -37,6 +83,7 @@
 			children = (
 				53121D4B23042C6400148925 /* Carthage */,
 				53121D4023042AE100148925 /* NimbleFeedback */,
+				53121E37230431C500148925 /* NimbleFeedbackTests */,
 				53121D3F23042AE100148925 /* Products */,
 				53121E3023042C8800148925 /* Frameworks */,
 			);
@@ -46,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				53121D3E23042AE100148925 /* NimbleFeedback.framework */,
+				53121E36230431C500148925 /* NimbleFeedbackTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,6 +139,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		53121E37230431C500148925 /* NimbleFeedbackTests */ = {
+			isa = PBXGroup;
+			children = (
+				53121E38230431C500148925 /* NimbleFeedbackTests.swift */,
+				53121E3A230431C500148925 /* Info.plist */,
+				53121E442304332300148925 /* DummyState.swift */,
+				538D47C72304494400F356B0 /* DummyStateTests.swift */,
+			);
+			path = NimbleFeedbackTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -123,18 +182,41 @@
 			productReference = 53121D3E23042AE100148925 /* NimbleFeedback.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		53121E35230431C500148925 /* NimbleFeedbackTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53121E3E230431C500148925 /* Build configuration list for PBXNativeTarget "NimbleFeedbackTests" */;
+			buildPhases = (
+				53121E32230431C500148925 /* Sources */,
+				53121E33230431C500148925 /* Frameworks */,
+				53121E34230431C500148925 /* Resources */,
+				53121E412304330100148925 /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53121E3D230431C500148925 /* PBXTargetDependency */,
+			);
+			name = NimbleFeedbackTests;
+			productName = NimbleFeedbackTests;
+			productReference = 53121E36230431C500148925 /* NimbleFeedbackTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		53121D3523042AE100148925 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = Trafi;
 				TargetAttributes = {
 					53121D3D23042AE100148925 = {
 						CreatedOnToolsVersion = 10.3;
 						LastSwiftMigration = 1030;
+					};
+					53121E35230431C500148925 = {
+						CreatedOnToolsVersion = 10.3;
 					};
 				};
 			};
@@ -151,12 +233,20 @@
 			projectRoot = "";
 			targets = (
 				53121D3D23042AE100148925 /* NimbleFeedback */,
+				53121E35230431C500148925 /* NimbleFeedbackTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		53121D3C23042AE100148925 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53121E34230431C500148925 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -174,7 +264,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		53121E32230431C500148925 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				538D47C82304494400F356B0 /* DummyStateTests.swift in Sources */,
+				53121E452304332300148925 /* DummyState.swift in Sources */,
+				53121E39230431C500148925 /* NimbleFeedbackTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		53121E3D230431C500148925 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53121D3D23042AE100148925 /* NimbleFeedback */;
+			targetProxy = 53121E3C230431C500148925 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		53121D4423042AE100148925 /* Debug */ = {
@@ -213,6 +321,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -277,6 +386,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -360,6 +470,50 @@
 			};
 			name = Release;
 		};
+		53121E3F230431C500148925 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2NLF64332K;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = NimbleFeedbackTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.trafi.NimbleFeedbackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		53121E40230431C500148925 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2NLF64332K;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = NimbleFeedbackTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.trafi.NimbleFeedbackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -377,6 +531,15 @@
 			buildConfigurations = (
 				53121D4723042AE100148925 /* Debug */,
 				53121D4823042AE100148925 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53121E3E230431C500148925 /* Build configuration list for PBXNativeTarget "NimbleFeedbackTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53121E3F230431C500148925 /* Debug */,
+				53121E40230431C500148925 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
