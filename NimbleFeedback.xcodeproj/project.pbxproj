@@ -15,8 +15,6 @@
 		53121E422304330C00148925 /* Nimble.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 53121E1A23042C6400148925 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		53121E432304330C00148925 /* NimbleFeedback.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 53121D3E23042AE100148925 /* NimbleFeedback.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		53121E452304332300148925 /* DummyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53121E442304332300148925 /* DummyState.swift */; };
-		5327DE5724470BE8007325B5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5327DE5624470BE8007325B5 /* XCTest.framework */; };
-		5327DE5824470BE8007325B5 /* XCTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5327DE5624470BE8007325B5 /* XCTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		538D47C82304494400F356B0 /* DummyStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538D47C72304494400F356B0 /* DummyStateTests.swift */; };
 		538D47C923044A2900F356B0 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53121E1A23042C6400148925 /* Nimble.framework */; };
 /* End PBXBuildFile section */
@@ -44,17 +42,6 @@
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5327DE5924470BE8007325B5 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				5327DE5824470BE8007325B5 /* XCTest.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -77,7 +64,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				53121E3123042C8800148925 /* Nimble.framework in Frameworks */,
-				5327DE5724470BE8007325B5 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,7 +174,6 @@
 				53121D3A23042AE100148925 /* Sources */,
 				53121D3B23042AE100148925 /* Frameworks */,
 				53121D3C23042AE100148925 /* Resources */,
-				5327DE5924470BE8007325B5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
