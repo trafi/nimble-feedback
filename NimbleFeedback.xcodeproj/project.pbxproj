@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		53121D4323042AE100148925 /* NimbleFeedback.h in Headers */ = {isa = PBXBuildFile; fileRef = 53121D4123042AE100148925 /* NimbleFeedback.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		53121D4A23042B2100148925 /* NimbleFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53121D4923042B2100148925 /* NimbleFeedback.swift */; };
+		5307D0EE2452F24B00CE7648 /* NimbleFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5307D0ED2452F24B00CE7648 /* NimbleFeedback.swift */; };
 		53121E3123042C8800148925 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53121E1A23042C6400148925 /* Nimble.framework */; };
 		53121E39230431C500148925 /* NimbleFeedbackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53121E38230431C500148925 /* NimbleFeedbackTests.swift */; };
 		53121E3B230431C500148925 /* NimbleFeedback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53121D3E23042AE100148925 /* NimbleFeedback.framework */; };
@@ -58,6 +57,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5307D0ED2452F24B00CE7648 /* NimbleFeedback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NimbleFeedback.swift; sourceTree = "<group>"; };
 		53121D3E23042AE100148925 /* NimbleFeedback.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NimbleFeedback.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53121D4123042AE100148925 /* NimbleFeedback.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NimbleFeedback.h; sourceTree = "<group>"; };
 		53121D4223042AE100148925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -93,9 +93,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5307D0EB2452F24B00CE7648 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5307D0EC2452F24B00CE7648 /* NimbleFeedback */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		5307D0EC2452F24B00CE7648 /* NimbleFeedback */ = {
+			isa = PBXGroup;
+			children = (
+				5307D0ED2452F24B00CE7648 /* NimbleFeedback.swift */,
+			);
+			path = NimbleFeedback;
+			sourceTree = "<group>";
+		};
 		53121D3423042AE100148925 = {
 			isa = PBXGroup;
 			children = (
+				5307D0EB2452F24B00CE7648 /* Sources */,
 				53121D4B23042C6400148925 /* Carthage */,
 				53121D4023042AE100148925 /* NimbleFeedback */,
 				53121E37230431C500148925 /* NimbleFeedbackTests */,
@@ -173,7 +190,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53121D4323042AE100148925 /* NimbleFeedback.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,7 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53121D4A23042B2100148925 /* NimbleFeedback.swift in Sources */,
+				5307D0EE2452F24B00CE7648 /* NimbleFeedback.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,7 +372,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -415,7 +431,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -442,7 +458,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = NimbleFeedback/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -473,7 +489,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = NimbleFeedback/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -491,6 +507,7 @@
 		53121E3F230431C500148925 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2NLF64332K;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -513,6 +530,7 @@
 		53121E40230431C500148925 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2NLF64332K;
 				FRAMEWORK_SEARCH_PATHS = (
