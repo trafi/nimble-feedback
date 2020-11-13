@@ -95,7 +95,7 @@
 		53121D3423042AE100148925 = {
 			isa = PBXGroup;
 			children = (
-				5315F6B42456C07D00C28B30 /* NimbleFeedback */,
+				C0889340255EC48400F414E8 /* Sources */,
 				53121D4223042AE100148925 /* Info.plist */,
 				53121D4B23042C6400148925 /* Carthage */,
 				53121E37230431C500148925 /* NimbleFeedbackTests */,
@@ -163,6 +163,14 @@
 				5315F6B62456C07D00C28B30 /* NimbleFeedback.swift */,
 			);
 			path = NimbleFeedback;
+			sourceTree = "<group>";
+		};
+		C0889340255EC48400F414E8 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5315F6B42456C07D00C28B30 /* NimbleFeedback */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

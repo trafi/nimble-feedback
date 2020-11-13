@@ -1,0 +1,1 @@
+{"object": {"artifacts": [], "dependencies": [{"basedOn": null, "packageRef": {"identity": "nimble", "kind": "remote", "name": "Nimble", "path": "https://github.com/Quick/Nimble.git"}, "state": {"checkoutState": {"branch": null, "revision": "7a46a5fc86cb917f69e3daf79fcb045283d8f008", "version": "8.1.2"}, "name": "checkout"}, "subpath": "Nimble"}]}, "version": 4}
