@@ -8,7 +8,7 @@ let package = Package(
         .library(name: "NimbleFeedback", targets: ["NimbleFeedback"])
     ],
     dependencies: [
-        .package(name: "Nimble", url: "https://github.com/quick/nimble.git", .upToNextMajor(from: "9.0.0"))
+        .package(name: "Nimble", url: "git@github.com:quick/nimble.git", .upToNextMajor(from: "9.0.0"))
     ],
     targets: [
         .target(
