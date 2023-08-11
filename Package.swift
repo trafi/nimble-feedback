@@ -1,9 +1,12 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.8
 
 import PackageDescription
 
 let package = Package(
     name: "NimbleFeedback",
+    platforms: [
+        .iOS(.v15),
+    ],
     products: [
         .library(name: "NimbleFeedback", targets: ["NimbleFeedback"])
     ],

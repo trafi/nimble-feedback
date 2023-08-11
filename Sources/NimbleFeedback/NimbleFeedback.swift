@@ -143,8 +143,8 @@ private extension StateChangeExpectation {
         }
     }
 
-    func predicate(_ msg: String, with matcher: @escaping Match) -> Predicate<S> {
-        return Predicate { s -> PredicateResult in
+    func predicate(_ msg: String, with matcher: @escaping Match) -> Nimble.Predicate<S> {
+        return Nimble.Predicate { s -> PredicateResult in
             let result = try s.evaluate().flatMap(matcher) ?? false
             return PredicateResult(bool: result, message: .expectedTo(msg))
         }
